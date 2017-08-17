@@ -25,15 +25,15 @@ arrOfFood.splice(4, 2);
 // }
 
 arrOfFood.forEach(function(foodItem){console.log(foodItem);})
-arrOfFood.forEach(function(foodItem, banana){console.log(banana);console.log(foodItem);})
+// arrOfFood.forEach(function(foodItem, banana){console.log(banana);console.log(foodItem);})
 
 //Arrays
 
-Let students = [
-			'Thomas',
-			'Madyson',
-			'Devon',
-			'Mike',
-			['Tyler', 'Jackson']];
+// Let students = [
+// 			'Thomas',
+// 			'Madyson',
+// 			'Devon',
+// 			'Mike',
+// 			['Tyler', 'Jackson']];
 			
 
