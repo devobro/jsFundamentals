@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<h1>Bootstrap Notes</h1>
+			<p>Bootstrap is made up of a 12-column grid system. You add your content into the 'rows' and 'columns' using Bootstrap CSS classes. Bootstrap will then take care of the responsiveness work for us.</p>
+
+			<p>Go out and find a Bootstrap image like this one:</p>
+			<img src="./lg_grid.jpg"> 
+
+			<p>Because Bootstrap takes care of the responsiveness for us, we have to format things in a particular way:</p>
+			<ol>
+				<li><b>Containers</b> surround the whole section of rows and columns</li>
+				<li><b>Rows</b> represent a horizontal line of elements</li>
+				<li><b>Columns</b> represent the horizontal space that elements take up in a row</li>
+			</ol>
+			<h3>Types of Containers:</h3>
+			<ul>
+				<li>Fixed container: 'container' </li>
+					<ul>
+						<li>Has a fixed width, which changes at certain breakpoints</li>
+						<li>Has built-in padding of 15px all the way around</li>
+					</ul>
+				<li>Fluid container: 'container-fluid'</li>
+					<ul>
+						<li>Has a fluid width, which stretches to 100% of its parent element</li>
+						<li>Has built-in padding of 15px all the way around</li>
+					</ul>
+			</ul>
+			<p>**Once you get down to the mobile size screens, they look pretty much identical, it's at medium and large screens where you can see the differences**</p>
+		<h1>Example 1</h1>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4" style="background-color: red; height: 400px">
+					<h3>Some text for testing</h3>
+				</div>
+				<div class="col-md-4" style="background-color: blue; height: 400px">
+					<h3>Some text for testing</h3>
+				</div>
+				<div class="col-md-4" style="background-color: orange; height: 400px">
+					<h3>Some text for testing</h3>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 col-md-push-8" style="background-color: red; height: 400px">
+					<label class="control-label sr-only" for="inputSuccess5">Some text for testing</label>
+				</div>
+				<div class="col-md-4 col-md-pull-4" style="background-color: blue; height: 400px">
+					<h3>Some text for testing</h3>
+				</div>
+				<div class="col-md-4  col-md-pull-4" style="background-color: orange; height: 400px">
+					<h3>Some text for testing</h3>
+				</div>
+			</div>
+			<div class="row">
+				<div class="form-group has-success has-feedback">
+  				<label class="control-label sr-only" for="inputSuccess5">Hidden label</label>
+  				<input type="text" class="form-control" id="inputSuccess5" aria-describedby="inputSuccess5Status">
+  				<span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+  				<span id="inputSuccess5Status" class="sr-only">(success)</span>
+				</div>
+				<div class="form-group has-success has-feedback">
+				  <label class="control-label sr-only" for="inputGroupSuccess4">Input group with success</label>
+				  <div class="input-group">
+				    <span class="input-group-addon">@</span>
+				    <input type="text" class="form-control" id="inputGroupSuccess4" aria-describedby="inputGroupSuccess4Status">
+				  </div>
+				  <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+				  <span id="inputGroupSuccess4Status" class="sr-only">(success)</span>
+				</div>
+				<div class="col-md-2" style="background-color: blue; height: 400px">
+					<h3>Some text for testing</h3>
+				</div>
+				<div class="col-md-2" style="background-color: orange; height: 400px">
+					<h3>Some text for testing</h3>
+				</div>
+				<div class="col-md-2" style="background-color: yellow; height: 400px">
+					<h3>Some text for testing</h3>
+				</div>
+				<div class="col-md-2" style="background-color: brown; height: 400px">
+					<h3>Some text for testing</h3>
+				</div>
+				<div class="col-md-2" style="background-color: purple; height: 400px">
+					<h3>Some text for testing</h3>
+				</div>	
+			</div>
+		</div>
+	</body>
+</html>
