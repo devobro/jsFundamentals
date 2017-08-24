@@ -1,0 +1,15 @@
+{
+  "name": "ajaxfundamentals",
+  "version": "1.0.0",
+  "description": "to learn about the web and stuff",
+  "main": "index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Devon J. Brosch",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.4"
+  }
+}
