@@ -18,16 +18,16 @@ Chaining conditional operators
 
 
 
-//Create an If statment that checks if the users name does not have a capital letter,
+// Create an If statment that checks if the users name does not have a capital letter,
 // Rebuild their name with a the lowercased letter capitalized capital letter
 
-// var name = prompt("What is your name?");
-// if (name[0] == name[0].toUpperCase()) {
-//  	console.log(name);
-// } else  {
-//  	name = name.substring(0,1).toUpperCase() + name.substring(1,1000);
-//  	console.log("Let me fix that: " + name);
-// }
+var name = prompt("What is your name?");
+if (name[0] == name[0].toUpperCase()) {
+ 	console.log(name);
+} else  {
+ 	name = name.substring(0,1).toUpperCase() + name.substring(1,1000);
+ 	console.log("Let me fix that: " + name);
+}
 
 var age = 23
 if (age >= 25) {
