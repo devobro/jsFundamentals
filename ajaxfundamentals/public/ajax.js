@@ -17,7 +17,7 @@ $(document).ready(function(){
 
 	$.ajax({
 		type: 'GET',
-		url: 'http://rest.learncode.academuy/api/learncode/friends',
+		url: 'http://rest.learncode.academy/api/learncode/javascriptfall',
 		success: function(friends){
 			$.each(friends, function(i, friend){
 				addFriend(friend);
@@ -34,4 +34,17 @@ $(document).ready(function(){
 			age: $age.val()
 		}
 	})
+	$friends.delegate('.remove', 'click', function(){
+
+		var $li = $(this).closest('li');
+		$.ajax({
+			type: 'DELETE',
+			url: 'http://rest.learncode.academy/api/learncode/javascriptfall' + $(this).attr('id'),
+			success: function(){
+				$li.fadeOut(300, function(){
+					$(this).remove();
+				});
+			}
+		});
+	});
 });

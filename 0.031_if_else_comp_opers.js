@@ -20,6 +20,11 @@
 // >= | greater than or equal to
 // <= | less than or equal to
 
+//Logical Operators
+//&& = and
+//|| = or
+//! = not
+
 // var isOn = true;
 // var isHot = false;
 
@@ -47,11 +52,6 @@
 // if(!isHot){
 // 	console.log("it is not hot");
 // }
-
-//Logical Operators
-//&& = and
-//|| = or
-//! = not
 
 var elevatorUp = true;
 var elevatorDown = true;
