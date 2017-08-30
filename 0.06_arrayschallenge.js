@@ -18,24 +18,30 @@ let myCarsPetsAndBooks = {
 	books: ["Isaac Asimov", "HTML and CSS", "Python Crash Course", "Algebra and Trigonometry"],
 	everything: [],
 	getCars: function(){
-		for (i = 0; i < cars.length; i++){
-			console.log(myCarsPetsAndBooks.books);
-			myCarsPetsAndBooks.everything.push(cars[i]);
-			
-		}
+			this.cars.forEach(function(newCar){myCarsPetsAndBooks.everything.push(newCar)});
+			return this.everything;
 	},
+
 	getPets: function(){
-		for (i = 0; i < pets.length; i++){
-			myCarsPetsAndBooks.everything.push(pets[i]);
-		}
+			this.pets.forEach(function(newPet){myCarsPetsAndBooks.everything.push(newPet)});
+			return this.everything;
 	},
 	getBooks: function(){
-		for (i = 0; i < books.length; i++){
-			myCarsPetsAndBooks.everything.push(books[i]);
-		}
-	// ∫
-	} 
+			this.books.forEach(function(newBook){myCarsPetsAndBooks.everything.push(newBook)});
+			return this.everything;
+			// console.log(this.everything);
+	}
+
 } 
+
+myCarsPetsAndBooks.getBooks();
+myCarsPetsAndBooks.getPets();
+myCarsPetsAndBooks.getCars();
+
+console.log(myCarsPetsAndBooks.everything);
+
+
+
 
 
 

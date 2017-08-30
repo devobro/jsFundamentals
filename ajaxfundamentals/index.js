@@ -23,7 +23,7 @@ app.use(express.static(__dirname + '/public')); //this is telling express to use
 												//changing things in the /public folder (or any other), then you don't have to restart server
 
 app.get('/', function(req,res){ //req=request; res=response; get=http request to server; /=root of application 
-	res.sendFile(__dirname + '/0.01_ajaxpractice.html'); //any changes to this and you need to restart your server
+	res.sendFile(__dirname + '/nasa.html'); //any changes to this and you need to restart your server
 })
 
 http.listen(3000, function(){
