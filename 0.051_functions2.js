@@ -113,7 +113,7 @@ function fullName(first, last){
 	return wholeName; //"return" distills down to a single value. returns a value, which is stored in memory, which can then be used later.
 }
 
-fullName("Paul", "O'Conner");
+console.log(fullName("Paul", "O'Conner"));
 
 function calculatePriceIndiana(quantity, price){
 	var tax = 0.07;

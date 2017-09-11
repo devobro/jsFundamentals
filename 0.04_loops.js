@@ -5,7 +5,7 @@ for Loop
 
 */
 
-// initialize var, have a boolian expression;
+// initialize var, have a boolean expression;
 // for ( var i = 0; i < 10; i++) {
 // 	console.log(i);
 // }
@@ -48,7 +48,7 @@ runs at least once
 // 	return false;
 // }
 
-//challenge create a while loop tha counts to 100 by 10's
+//challenge create a while loop that counts to 100 by 10's
 // var i = 0;
 // while (i != 100) {
 // 	i += 10;
