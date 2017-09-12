@@ -53,4 +53,35 @@ const cleanUserList = users.filter(cleanUsers);
 
 console.log(cleanUserList);
 
+//filter out the dogs
+var animals = [
+	{name: 'Fluffykins', species: 'rabbit'},
+	{name: 'Caro', species: 'dog'},
+	{name: 'Hamilton', species: 'dog'},
+	{name: 'Harold', species: 'fish'},
+	{name: 'Ursula', species: 'cat'},
+	{name: 'Jimmy', species: 'fish'}
+];
+//filter accepts one argument, another function, a call-back function
+//filter loops through each item and passes it into the call-back function
+//it'll expect the call-back function to return either true or false
+//then it'll push the items meeting this criteria to the new array (dogs, in this case)
+var dogs = animals.filter(function(animal){
+	return animal.species === 'dog';
+});
+
+//breakout the callback in a separate variable
+var isDog = function(animal){
+	return animal.species === 'dogs';
+};
+
+var dogs = animals.filter(isDog);
+
+
+// var dogs = [];
+// for (i = 0; i < animals.length; i++){
+// 	if (animals[i].species === 'dog')
+// 		dogs.push(animals[i]);
+// };
+
 
