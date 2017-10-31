@@ -5,8 +5,8 @@
 var object = {
 	faces: ["big faces", "little faces", "round faces", "square faces"],
 	butts: {
-		bigbutts: ["your mom's butt", "your aunt's butt", "your butt"],
-		littlebutts: ["your dog's butt", "your parakeet's butt", "your hamster's butt"]
+		bigfeet: ["your mom's feet", "your aunt's feet", "your feet"],
+		littlefeet: ["your dog's feet", "your parakeet's feet", "your hamster's feet"]
 	}
 }
 
